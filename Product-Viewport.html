@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/Styles/Styles.css">
+    <script src="https://kit.fontawesome.com/83445c6842.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="Header">
+
+        <div class="bar-nav">
+
+            <div class="container-img">
+                <a href="https://www.academlo.com">
+                    <img src="https://www.academlo.com/logo_academlo.png" alt="">
+                </a>
+            </div>
+
+            <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrito de compras</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body" id="offcanvas-body">
+                
+                <!-- Se va inprimir el pequeño -->
+
+              </div>
+              <div class="row">
+                <div class="col-2"></div>
+                
+                <div class="col-8">
+                    <button type="button" class="btn btn-danger" style="width: 100%;">Comprar</button>
+                </div>
+
+                <div class="col-2"></div>
+                
+              </div>
+            </div>
+        </div>
+
+
+        <div class="Intro">
+            <div class="Logo">
+                <img src="https://bucketeer-e05bbc84-baa3-437e-9518-adb32be77984.s3.amazonaws.com/public/images/6a4f77bf-7393-41bc-ad3a-7c2b5fb1d995_1280x1280.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <main class="Main">
+        <div class="container">
+            <a href="./index.html" class="back-container ">
+                <i class="fa-solid fa-angle-left"></i>
+                <p class="Title">Academlo - Tienda Oficial</p>
+            </a>
+        </div>
+        <div id="BigProduct-container" onclick="getBigProducts()" >
+            
+            <!-- Aqui se imprime el grande -->
+
+        </div>
+
+        <div>
+            <div class="container">
+                <button class="btn btn-outline-danger" onclick="getLitteProducts()">Agregar al carrito</button>
+            </div>
+        </div>
+
+        <div class="container">
+            <p class="Title">Productos recomendados</p>
+            <div class="Products-container"  id="Recomended-Products">
+                <!-- Aqui deberia ir el allproducts 2 -->
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="Sus-Container">
+                <div class="Text-container">
+                    <p class="Title">Mantente en Contacto</p>
+                    <p class="Sub-title">Suscribete para mantenerte el tanto de los productos nuevos y ofertas especiales</p>
+                </div>
+                <div class="mb-3 sus-layout">
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Escribe tu Email">
+                    <button type="submit" class="btn btn-primary">Suscribete</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="Footer">
+        <p>Hecho con dediacion de un estudiante que necesita dormir <br> Todos Los Derechos Reservados</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+    <script src="./assets/js/js.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Helvetica, sans-serif, Arial;
+}
+
+a{
+ text-decoration: none;
+ color: #434343;
+}
+
+p{
+    font-size: 1rem;
+    color: #434343;
+}
+.Title{
+    font-size: 24px;
+    font-weight: 600;
+}
+.Sub-title{
+    font-size: 20px;
+
+}
+img{
+    width: 100%;
+}
+
+button{
+    background: none;
+    border: none;
+}
+
+
+
+/* ===============Header================= */
+.Header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.bar-nav{
+    width: 100%;
+    height: 60px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-img{
+    text-align: center;
+    width: 16.6%;
+}
+
+.Intro{
+    width: 100%;
+    background-color: #eb4a5a;
+}
+
+.Intro .Logo{
+    background-color: white;
+    width: 66.67%;
+    margin: 20px auto;
+    border-radius: 15%;
+    text-align: center;
+}
+
+.Intro .Logo img{
+    width: 50%;
+}
+
+.back-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 768px){
+    .container-img{
+        text-align: right;
+        width: 50%;
+    }
+}
+
+/* =====================MAIN====================== */
+.container{
+    width: 66.67%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.AllProducts-container{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    column-gap: 15px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+}
+
+.padding-1{
+    padding: 10px 10px;
+}
+
+.margin-1{
+    margin-bottom: 40px;
+    
+}
+
+.centrado{
+    align-items: center;
+    display: flex;
+}
+
+.Filter{
+    width: 33.34%;
+    display: flex;
+    justify-content: right;
+    padding: 15px 0;
+}
+
+.Title-container{
+    width: 50%;
+    padding: 15px 0;  
+}
+
+.Products-container{
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: ; */
+}
+
+.ejemplo{
+    width: 20.83%;
+    margin: 0 auto 30px auto;
+}
+
+.More-Options{
+    place-content: center;
+    margin: 20px auto;
+    border: solid #434343;
+    border-radius: 10px;
+    padding: 15px 20px;
+}
+
+.center{
+    margin-bottom: -3px;
+}
+
+.Sus-Container{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 30px auto;
+}
+
+.Text-container{
+    text-align: center;
+}
+
+.sus-layout{
+    display: flex;
+}
+.sus-layout input{
+    width: 83.34%;
+}
+.sus-layout button{
+    width: 16.67%;
+}
+
+.grid-2{
+    background-color: #f6f3f3;
+    width: 66.67%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mitad-1{
+    grid-column: 2/3;
+}
+
+.mitad-2{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+
+.colum-6{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+@media(max-width: 768px){
+    .container{
+        width: 100%;
+        padding: 10px;
+    }
+    .AllProducts-container{
+        grid-template-columns: 100%;
+        column-gap: 10px;
+        row-gap: 5px;
+    }
+    .Products-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .ejemplo{
+        width: 83.34%;
+        margin: 0 auto 30px auto;
+    }
+    .grid-2{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Sus-Container{
+        width: 100%;
+    }
+    .Text-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+.Footer{
+    background: rgb(67,67,67);
+    background: linear-gradient(0deg, rgba(67,67,67,1) 15%, rgba(151,71,79,1) 44%, rgba(235,74,90,1) 100%);
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.Footer p{
+    color: white;
+}
